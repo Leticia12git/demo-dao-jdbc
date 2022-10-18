@@ -4,26 +4,26 @@ import java.io.Serializable;
 import java.util.Date;
 import java.util.Objects;
 
-public class Seller implements Serializable{
+public class Seller implements Serializable {
 
 	private static final long serialVersionUID = 1L;
 	private Integer id;
 	private String name;
 	private String email;
-	private Date bitthDate;
-	private Double basesalary;
-	
+	private Date birthDate;
+	private Double baseSalary;
+
 	private Department department;
-	
+
 	public Seller() {
 	}
 
-	public Seller(Integer id, String name, String email, Date bitthDate, Double basesalary, Department department) {
+	public Seller(Integer id, String name, String email, Date birthDate, Double baseSalary, Department department) {
 		this.id = id;
 		this.name = name;
 		this.email = email;
-		this.bitthDate = bitthDate;
-		this.basesalary = basesalary;
+		this.birthDate = birthDate;
+		this.baseSalary = baseSalary;
 		this.department = department;
 	}
 
@@ -51,20 +51,20 @@ public class Seller implements Serializable{
 		this.email = email;
 	}
 
-	public Date getBitthDate() {
-		return bitthDate;
+	public Date getBirthDate() {
+		return birthDate;
 	}
 
-	public void setBitthDate(Date bitthDate) {
-		this.bitthDate = bitthDate;
+	public void setBirthDate(Date birthDate) {
+		this.birthDate = birthDate;
 	}
 
-	public Double getBasesalary() {
-		return basesalary;
+	public Double getBaseSalary() {
+		return baseSalary;
 	}
 
-	public void setBasesalary(Double basesalary) {
-		this.basesalary = basesalary;
+	public void setBaseSalary(Double baseSalary) {
+		this.baseSalary = baseSalary;
 	}
 
 	public Department getDepartment() {
@@ -94,12 +94,8 @@ public class Seller implements Serializable{
 
 	@Override
 	public String toString() {
-		return "Seller [id=" + id + ", name=" + name + ", email=" + email + ", bitthDate=" + bitthDate + ", basesalary="
-				+ basesalary + ", department=" + department + "]";
+		return "Seller [id=" + id + ", name=" + name + ", email=" + email + ", birthDate=" + birthDate + ", baseSalary="
+				+ baseSalary + ", department=" + department + "]";
 	}
 
-	
-	
-	
-	
 }
